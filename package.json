@@ -1,7 +1,6 @@
 {
   "name": "practica_1",
   "version": "1.0.0",
-  "description": "",
   "main": "app.js",
   "type": "module",
   "dependencies": {
@@ -12,6 +11,15 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "author": "emir",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ecruz17/pw_work_directory"
+  },
+  "bugs": {
+    "url": "https://github.com/ecruz17/pw_work_directory/issues"
+  },
+  "homepage": "https://github.com/ecruz17/pw_work_directory#readme",
+  "description": ""
 }
