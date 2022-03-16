@@ -1,5 +1,5 @@
-import Emitter from "./emitter.js";
-
+//import Emitter from "./emitter.js";
+var Emitter = require('./emitter.js');
 var emtr = new Emitter();
 
 emtr.on('greet', () => {

@@ -15,4 +15,4 @@ Emitter.prototype.emit = function (type) {
     }
 }
 
-export default Emitter;
+module.exports = Emitter;
