@@ -2,7 +2,7 @@
   "name": "practica_1",
   "version": "1.0.0",
   "main": "app.js",
-  "type": "module",
+  "type": "commonjs",
   "dependencies": {
     "chalk": "^5.0.0"
   },
