@@ -1,3 +1,3 @@
-import chalk from "chalk"; //chalk 5 is now ESM
+var chalk = require('chalk');
 
 console.log(chalk.blue('Hola Node'));
