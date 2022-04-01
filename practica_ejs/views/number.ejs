@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/assets/style.css" type="text/css">
+    </head>
+    <body>
+        <h1>Número: <%= NUM %></h1> <!--sintaxis para enviar el parametro id al index.js-->
+        <ul>
+        <% if (NUM%2 == 0) { %> <!-- si al dividir el numero entre 2 no hay residuo, el numero se imprime sus mismas veces por dos -->
+        <%for(let i = 0; i < NUM * 2; i++) {%>
+        <li>
+        es par X<%= i+1%>            
+        </li>
+        <% } %>
+        <% } else { %>
+        <%for(let i = 0; i < NUM; i++) {%> <!-- si no, se imprime sus mismas veces solamente -->
+        <li>
+        es impar X<%= i+1%>
+        </li>
+        <% } %>
+        <% } %>
+        </ul>
+    </body>
+</html>

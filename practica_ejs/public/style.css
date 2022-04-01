@@ -1,0 +1,6 @@
+body {
+    box-sizing: border-box; /* cambia la forma de agregar margenes a los elementos del DOM */
+    font-family: 'Roboto Condensed', sans-serif; /* estilo global de la tipografía */
+    margin: 0;
+    background-color: rgb(177, 177, 177); /* color de fondo de la página */
+}
