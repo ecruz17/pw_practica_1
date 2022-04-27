@@ -9,7 +9,19 @@
 </head>
 <body>
     <h1>Person: <%= ID %></h1>
-    <h2>Query string value: <%= Qstr %></h2> 
-    <!-- se pasan los valores de ID y Qstr -->
+    <h2>Mensaje: <%= Msg %></h2> 
+    <!-- se pasan los valores de ID y el mensaje mediante la query string -->
+    <% switch (Msg) { case 'Hola': %> <% for(var i=0; i< Times; i++) { %>
+        <li>Hola <%= ID %></li>
+        <% } %> <% break; case 'Adios': %> <% for(var i=0; i< Times; i++) { %>
+        <li>Adios <%= ID %></li>
+        <% } %> <% break; case 'Bienvenido': %> <% for(var i=0; i< Times; i++) { %>
+        <li>Bienvenido <%= ID %></li>
+        <% } %> <% break; default: %> <% for(var i=0; i< Times; i++) { %>
+        <li><%= Msg %> <%= ID %></li>
+        <% } %>
+        <h3></h3>
+        <% break; } %>
+    <!-- el switch decide cuantas veces y el mensaje que se imprimirá en pantalla -->
 </body>
 </html>

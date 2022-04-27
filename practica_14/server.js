@@ -29,7 +29,7 @@ app.get('/', function(req, res) {
 
 
 app.get('/person/:id', function(req, res){
-    res.render('person', { ID: req.params.id, Qstr: req.query.qstr }); //pasamos dos keys, el id y el qstr
+    res.render('person', { ID: req.params.id, Msg: req.query.msg, Times: req.query.times }); //pasamos dos keys, el id y el qstr
 }); 
 
 
