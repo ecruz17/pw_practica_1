@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form</title>
+    <!-- declaramos jquery en el head del html para poder utilizarlo -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <form action="/student" method="POST"> <!-- se especifica la ruta y el método para extraer los datos del form -->
+    <label for="fname">First name: </label>
+    <input type="text" name="fname" id="fname"/><br /><br />
+    <label for="lname" name="lname" id="lname">Last name: </label>
+    <input type="text" name="lname" name="lname" id="lname" /><br /><br />
+    <input type="submit" value="Submit" /> <!-- botón que envia los datos del formulario -->
+    </form>
+    <script>
+        // configuración de la request ajax
+        $.ajax({
+            type: 'POST', //se especifica que se utilizará el método POST
+            url: '/personjson', //se apunta a la url que creamos en el archivo de server
+            data: JSON.stringify({fname: 'Emir', lname: 'Cruz'}), //se crea un objeto json como texto para luego convertirlo
+            dataType: 'json', //especifica el tipo de dato
+            contentType: 'application/json' //convierte el formato por defecto en el que utilizaremos
+        });
+    </script>
+</body>
+</html>
