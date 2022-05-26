@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar persona</title>
+</head>
+
+<body style="text-align: center;">
+    <h1>Edición de persona</h1>
+    <form action="/updatePerson" method="POST">
+        <label for="nss">NSS:</label>
+        <input type="text" id="nss" name="nss" value="<%= `${person.nss}` %>"><br><br> <!--rellenamos las inputs con las props de la persona-->
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" value="<%= `${person.nombre}` %>"><br><br>
+        <label for="edad">Edad:</label>
+        <input type="text" id="edad" name="edad" value="<%= `${person.edad}` %>"><br><br>
+        <label for="tipoSangre">Tipo de sangre:</label>
+        <input type="text" id="tipoSangre" name="tipoSangre" value="<%= `${person.tipoSangre}` %>"><br><br>
+        <label for="personId">ID:</label>
+        <input type="text" id="personId" name="personId" value="<%= `${person._id}` %>">
+            <button type="submit">Actualizar</button>
+    </form>
+    <br>
+    <a href="/main">Take me back!</a>
+</body>
+
+</html>

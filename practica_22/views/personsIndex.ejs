@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/style.css" type="text/css">
+    <title>Persons list</title>
+</head>
+<body>
+    <table class="tablePersons">
+        <tr>
+            <th>NSS</th>
+            <th>Nombre</th>
+            <th>Edad</th>
+            <th>Tipo de Sangre</th>
+        </tr>
+    
+        <% for (var i=0; i < person.length;
+            i++) { %>
+            <tr>
+                <td>
+                    <%= person[i].nss %>
+                </td>
+                <td>
+                    <%= person[i].nombre %>
+                </td>
+                <td>
+                    <%= person[i].edad %>
+                </td>
+                <td>
+                    <%= person[i].tipoSangre %>
+                </td>
+                <td><a href="<%= `deletePerson/${person[i]._id}` %>">Delete</a></td>
+                <td><a href="<%= `findById/${person[i]._id}` %>">Update</a></td>
+            </tr>
+            <% } %>
+    </table>
+</body>
+</html>
